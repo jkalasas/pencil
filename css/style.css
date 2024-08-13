@@ -17,11 +17,15 @@ main {
   background-color: #e6e2dd;
   top: 0%;
   left: 0%;
+}
+
+.loading-screen .loading-container {
+  margin-top: 300px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
 }
 
 .loading-text {
@@ -30,7 +34,7 @@ main {
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   animation: shakingText 1s ease-in-out infinite;
 }
 
@@ -131,7 +135,7 @@ canvas.paper {
   position: absolute;
   top: 200px;
   left: 200px;
-  transform: translateY(-90%);
+  transform: translateY(-90%); /* tip of the pencil */
   transform-origin: center center;
   user-select: none;
 }
@@ -146,8 +150,12 @@ canvas.paper {
     top: 32px;
   }
 
-  .loading-screen {
-    padding-bottom: 100px;
+  .loading-screen .loading-container {
+    margin: 200px;
+  }
+
+  .loading-text {
+    font-size: 2rem;
   }
 }
 
