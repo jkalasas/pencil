@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Magic Pencil</title>
+  </head>
+  <body>
+    <main>
+      <section class="loading-screen">
+        <div class="pencil-container">
+          <div class="pencil-top"></div>
+          <div class="pencil-body">
+            <div class="pencil-body-line"></div>
+            <div class="pencil-body-line"></div>
+          </div>
+          <div class="pencil-tip"></div>
+          <div class="pencil-lead"></div>
+        </div>
+        <h1 class="loading-text">Click the screen to continue!</h1>
+      </section>
+      <section id="notebook" class="notebook">
+        <section class="toolbar">
+          <button class="btn-color" style="--color: #52575d"></button>
+          <button class="btn-color" style="--color: #fff"></button>
+          <button class="btn-color" style="--color: #ffb3ba"></button>
+          <button class="btn-color" style="--color: #ffdfba"></button>
+          <button class="btn-color" style="--color: #baffc9"></button>
+          <button class="btn-color" style="--color: #bae1ff"></button>
+          <button class="btn-clear">
+            <img src="./imgs/delete.svg" alt="Delete icon" />
+          </button>
+          <button class="btn-fullscreen">
+            <img src="./imgs/fullscreen.svg" alt="Fullscreen icon" />
+          </button>
+        </section>
+        <canvas class="paper"></canvas>
+        <div class="pencil" oncontextmenu="return false">
+          <img
+            src="./imgs/pencil.svg"
+            alt="Pencil Image"
+            style="height: 100px"
+            draggable="false"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
